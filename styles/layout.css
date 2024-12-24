@@ -1,0 +1,29 @@
+main {
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+}
+
+.container {
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-inline: 6rem;
+    max-width: 35rem;
+}
+
+#result-container {
+    font-weight: 800;
+}
+
+#note-container {
+    font-size: 0.75rem;
+}
+
+@media (width <= 28em) {
+    .container {
+        margin-inline: 3rem;
+    }
+
+    #note-container {
+        font-size: 0.625rem;
+    }
+}

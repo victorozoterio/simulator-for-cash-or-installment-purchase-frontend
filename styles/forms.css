@@ -1,0 +1,17 @@
+@import url(fields/index.css);
+
+legend {
+    margin-inline: auto;
+    font: var(--text-lg);
+}
+
+fieldset {
+    border: none;
+    justify-items: center;
+}
+
+@media (width <= 28em) {
+    legend {
+        font: var(--text-md);
+    }
+}

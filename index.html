@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de compra - À vista ou parcelado?</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form id="simulator-form">
+            <fieldset class="simulator">
+                <legend>Melhor comprar à vista ou parcelado?</legend>
+
+                <div class="container grid">
+                    <div class="input-wrapper">
+                        <label for="cash-value">Valor à vista</label>
+                        <input type="text" name="cash-value" id="cash-value" placeholder="00,00" required>
+                    </div>
+    
+                    <div class="grid grid-cols-2 gap-3rem">
+                        <div class="input-wrapper">
+                            <label for="installment-value">Valor da parcela</label>
+                            <input type="text" name="installment-value" id="installment-value" placeholder="00,00" required>
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="number-of-installments">Quant. de parcelas</label>
+                            <input type="text" name="number-of-installments" id="number-of-installments" placeholder="0" required>
+                        </div>
+                    </div>
+                    <button type="submit">Simular</button>
+
+                    <div id="result-container"></div>
+                    <div id="cash-option-container"></div>
+                    <div id="installment-option-container"></div>
+                    <div id="note-container"></div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
