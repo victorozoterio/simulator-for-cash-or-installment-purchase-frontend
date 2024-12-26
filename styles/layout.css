@@ -6,8 +6,12 @@ main {
 .container {
     align-self: center;
     margin-top: 1.5rem;
-    margin-inline: 6rem;
+    margin-inline: auto;
     max-width: 35rem;
+
+    & div:nth-child(2) {
+        gap: 4rem;
+    }
 }
 
 #result-container {
@@ -21,6 +25,10 @@ main {
 @media (width <= 28em) {
     .container {
         margin-inline: 3rem;
+
+        & div:nth-child(2) {
+            gap: 1.5rem;
+        }
     }
 
     #note-container {

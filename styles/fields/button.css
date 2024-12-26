@@ -2,4 +2,5 @@ button {
     padding: 1rem;
     background-color: green;
     border-radius: 0.5rem;
+    border: 2px solid black;
 }
